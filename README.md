@@ -6,3 +6,7 @@ Esta parte del proyecto se encarga de validar la entrada para datos de tipo Doub
 Se agregó una clase llamada Menú que contiene varias 2 métodos principales y uno secundario.
 Método menu contiene la información que desplega el programa y un switch para la seleccion del usuario, que contiene los metodos de la clase operaciones. Validado como corresponde
 
+# Calculadora-Operaciones (Luis Burgos)
+
+Esta parte corresponde a los metodos del tipo double con nombre suma, resta, multiplicación, división, potencia y si el 
+numero es mayor, 
