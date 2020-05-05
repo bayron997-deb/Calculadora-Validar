@@ -29,27 +29,15 @@ public class Calculadora {
     public static Scanner teclado = new Scanner(System.in);
 
     // Variables que se usarán
-    public static int a, b;
     public static double x, y;
+    public static boolean seguir = true;
 
     public static void main(String[] args) {
-
-        //  Valida un int
-        a = Operaciones.validarInt();
-        System.out.println("" + "El número ingresado es: " + a);
-
-        // Valida un double}
-        x = Operaciones.validarDouble(" ");
-        System.out.println("El número ingresado es: " + x);
-
-        // Usa validar double
-        Operaciones.ingrese2Numeros();
-        System.out.println("Los números ingresados son: "+x+" y "+y);
-
-        // Usa validar double
-        Operaciones.ingreseNumExp();
-        System.out.println("El número ingresado es "+x+" y su exponente es "+y);
-
+        //Llamando al metodo menu de la clase Menu con un do while para que repita hasta que el usuario en case 7 seleccione salir
+    Menu menu = new Menu();
+    do{
+        menu.menu();
+    }while(seguir);
     }
 }
 

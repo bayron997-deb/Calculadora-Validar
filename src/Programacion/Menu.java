@@ -21,31 +21,37 @@ public class Menu {
             case 1:
                 System.out.println("Usted ha seleccionado suma");
                 ope.ingrese2Numeros();
+                ope.suma(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 2:
                 System.out.println("Usted ha seleccionado resta");
                 ope.ingrese2Numeros();
+                ope.resta(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 3:
                 System.out.println("Usted ha seleccionado multiplicación");
                 ope.ingrese2Numeros();
+                ope.multiplicacion(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 4:
                 System.out.println("Usted ha seleccionado división");
                 ope.ingrese2Numeros();
+                ope.division(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 5:
                 System.out.println("Usted ha seleccionado elegir el mayor de 2 numeros");
                 ope.ingrese2Numeros();
+                ope.mayor(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 6:
                 System.out.println("Usted ha seleccionado potencia de un numero");
                 ope.ingreseNumExp();
+                ope.potencia(Calculadora.x,Calculadora.y);
                 linea();
                 break;
             case 7:
@@ -66,7 +72,7 @@ public class Menu {
             eleccion = ope.validarInt();
             switch (eleccion) {
                 case 1:
-                    Calculadora.seguir = false;//agregar en clase calculadora
+                    Calculadora.seguir = false;
                     valido = true;
                     break;
                 case 0:
