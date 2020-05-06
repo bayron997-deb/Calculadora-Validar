@@ -10,7 +10,7 @@ public class Operaciones {
         int a=0;
         while(repetir){
             try{
-                System.out.print("Ingrese el número: ");
+                System.out.print("Escoja una opción: ");
                 a = Calculadora.teclado.nextInt();
                 repetir = false;
             } catch (InputMismatchException e){
